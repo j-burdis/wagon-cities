@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const ActiveCity = (props) => {
+function ActiveCity(props) {
   if (!props.activeCity) {
-    return(
+    return (
       <div className="active-city">
         <p>Select a city...</p>
       </div>
@@ -19,7 +19,7 @@ const ActiveCity = (props) => {
       <img src={url} width="100%" />
     </div>
   );
-};
+}
 
 function mapReduxStateToProps(reduxState) {
   return {
